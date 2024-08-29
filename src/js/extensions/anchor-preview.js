@@ -83,9 +83,11 @@
                 return true;
             }
 
-            if (this.previewValueSelector) {
-                this.anchorPreview.querySelector(this.previewValueSelector).textContent = anchorEl.attributes.href.value;
-                this.anchorPreview.querySelector(this.previewValueSelector).href = anchorEl.attributes.href.value;
+            const hrefAttribute = anchorEl.attributes.href;
+            if (hrefAttribute) {
+                const hrefValue = hrefAttribute.value;
+                this.anchorPreview.querySelector(this.previewValueSelector).textContent = hrefValue;
+                this.anchorPreview.querySelector(this.previewValueSelector).href = hrefValue;
             }
 
             this.anchorPreview.classList.add('medium-toolbar-arrow-over');
