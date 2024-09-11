@@ -77,7 +77,7 @@
     "lodash": "4.17.19",
     "open-cli": "6.0.1",
     "phantomjs-prebuilt": "2.1.16",
-    "serve-static": "1.14.1",
+    "serve-static": "1.16.0",
     "time-grunt": "2.0.0"
   },
   "scripts": {
